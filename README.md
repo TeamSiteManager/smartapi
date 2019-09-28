@@ -1,2 +1,2 @@
 # smartapi
-example of using the SiteManager Smart Contetn API
+example of using the SiteManager Smart Content API
