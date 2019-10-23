@@ -33,32 +33,14 @@ $accessToken = $data['access_token'];
 //step 2 additional data to insert into site (JSON)
 //this step is optional: do not use this if you don't want to insert extra information
 
-$arr = array(
-    'properties' => array(
-        array(
-            'property' => 'name',
-            'value' => 'John Doe'
-        ),
-        array(
-            'property' => 'company',
-            'value' => 'SiteManager'
-        ),
-        array(
-            'property' => 'country',
-            'value' => 'Belgium'
-        ),
-        array(
-            'property' => 'job_role',
-            'value' => 'CTO'
-        ),
-        array(
-            'property' => 'website',
-            'value' => 'https://www.sitemanager.io'
-        )
+$data_json = [];
+$data_json["status"] = "success";
+$data_json["name"] = "John Doe";
+$data_json["company"] = "Company Name";
+$data_json["country"] = "United States";
+$data_json["job_role"] = "CTO";
 
-    )
-);
-$post_json = json_encode($arr);
+$post_json = json_encode($data_json);
 
 //step 3 create smarttoken with optional additional data
 
