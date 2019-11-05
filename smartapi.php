@@ -65,7 +65,8 @@ if ($data["status"]["type"] == "success")
 
     $smarttoken = $data['logintoken'];
     $project = $data['project'];
-
+    
+    //smart content settings: enable url login for parameter smt to work
     $redirectURL = 'https://www.mywebsite.com/?smt=' . $smarttoken;
 
     //example only
